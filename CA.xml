@@ -60,10 +60,10 @@
         mcc="302"
         mnc="150"
         carrier="Cogeco"
-        apn="data.cogecomobile.ca"
+        apn="data.cogeco"
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
-        type="default,mms,xcap"
+        type="default"
     />
     <apn
         mcc="302"
@@ -73,6 +73,18 @@
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
         type="ims"
+    />
+    <apn
+        mcc="302"
+        mnc="150"
+        carrier="Cogeco MMS"
+        apn="mms.cogeco"
+        mmsc="http://mms.cogeco.ca/"
+        mmsport="8080"
+        mmsproxy="10.232.12.49"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="mms"
     />
     <apn
         mcc="302"
@@ -87,10 +99,10 @@
         mcc="302"
         mnc="151"
         carrier="Cogeco"
-        apn="data.cogecomobile.ca"
+        apn="data.cogeco"
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
-        type="default,mms,xcap"
+        type="default"
     />
     <apn
         mcc="302"
@@ -100,6 +112,18 @@
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
         type="ims"
+    />
+    <apn
+        mcc="302"
+        mnc="151"
+        carrier="Cogeco MMS"
+        apn="mms.cogeco"
+        mmsc="http://mms.cogeco.ca/"
+        mmsport="8080"
+        mmsproxy="10.232.12.49"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="mms"
     />
     <apn
         mcc="302"
@@ -659,8 +683,6 @@
         mmsc="http://mmss.mobi.eastlink.ca"
         mmsport="8080"
         mmsproxy="10.232.12.49"
-        mtu="1500"
-        skip_464xlat="1"
         type="mms"
     />
     <apn
@@ -907,6 +929,34 @@
     />
     <apn
         mcc="302"
+        mnc="480"
+        carrier="Eeyou"
+        apn="apn.em.com"
+        mmsc="http://mms.eeyoumobility.com"
+        mmsport="80"
+        mmsproxy="mms.eeyoumobility.com"
+        mvno_match_data="3024800002"
+        mvno_type="imsi"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,mms"
+    />
+    <apn
+        mcc="302"
+        mnc="480"
+        carrier="SSI"
+        apn="ssi992.ssimicro.com"
+        mmsc="http://mms.ssimicro.com"
+        mmsport="80"
+        mmsproxy="mms.ssimicro.com"
+        mvno_match_data="302480017"
+        mvno_type="imsi"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        type="default,mms"
+    />
+    <apn
+        mcc="302"
         mnc="490"
         carrier="Freedom Mobile"
         apn="internet.freedommobile.ca"
@@ -982,13 +1032,27 @@
         mnc="500"
         carrier="Fizz IMS"
         apn="ims"
+        bearer_bitmask="14|18|20"
         carrier_id="2417"
         mvno_match_data="55"
         mvno_type="gid"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
+        protocol="IPV6"
+        roaming_protocol="IPV6"
         type="ims"
         user_editable="false"
+        user_visible="false"
+    />
+    <apn
+        mcc="302"
+        mnc="500"
+        carrier="Fizz SOS"
+        apn="sos"
+        carrier_id="2417"
+        mvno_match_data="55"
+        mvno_type="gid"
+        protocol="IPV6"
+        roaming_protocol="IPV6"
+        type="emergency"
         user_visible="false"
     />
     <apn
@@ -999,8 +1063,6 @@
         carrier_id="2417"
         mvno_match_data="55"
         mvno_type="gid"
-        protocol="IP"
-        roaming_protocol="IP"
         type="xcap"
         user_editable="false"
         user_visible="false"
